@@ -16,3 +16,16 @@ Allocates 60 32-byte memory blocks.
 Then frees the top half of the blocks in reverse order til the middle.
 Then from the beginning ot the middle.
 This tests the system by forcing it to stitch adjacent blocks together.
+
+Correctness Testing:
+memtest: provided and works as given
+
+errortest: takes a single command-line arg (1, 2, or 3) and does a specific error test.
+1: frees an address not obtained from malloc
+2: frees an address that is not at the start of a chunk
+3: frees the same ptr twice
+
+coalescetest: allocates 3 adjacent mem-blocks and frees them.
+Then requests a single block larger than the individual chunks.
+This tests if the coalescence works.
+Hopefully it does.

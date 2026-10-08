@@ -15,12 +15,12 @@ int main()
     void *d = malloc(80);
     if (d != NULL)
     {
-        printf("Coalescing successful.\n");
+        printf("coalescing successful.\n");
         free(d);
     }
     else
     {
-        printf("Coalescing failed.\n");
+        printf("coalescing failed.\n");
     }
 
     return EXIT_SUCCESS;

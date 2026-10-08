@@ -1,1 +1,9 @@
 .direnv
+
+*.o
+
+# P1
+coalescetest
+errortest
+memgrind
+memtest
