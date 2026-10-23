@@ -8,7 +8,7 @@ def main [project?: string] {
     } else if ($current_dir | str starts-with "P") {
         $current_dir
     } else {
-        print "error: Please specify a project (e.g., tarnu P2) or run from inside a project directory."
+        print "error: please specify a project (e.g., tarnu P2) or run from inside a project directory."
         return
     }
 
