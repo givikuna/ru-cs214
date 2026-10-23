@@ -1,0 +1,19 @@
+Givi Tsvariani, gt380
+
+Design Notes:
+Right now, the symbols ' and \_ are assumed to be words if seen alone.
+
+Testing:
+I made two files in the ./tests directory:
+
+- test1.txt
+- test2.txt
+
+The outcomes were what I was expecting.
+
+Test one was:
+Foo bar? Bar! Foo-bar baz--quux! 'oo? "Bar, bar."
+Super23foo.
+
+Test two was:
+zebra Apple apple 'quote zebra Apple 'quote zebra

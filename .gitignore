@@ -3,7 +3,10 @@
 *.o
 
 # P1
-coalescetest
-errortest
-memgrind
-memtest
+P1/coalescetest
+P1/errortest
+P1/memgrind
+P1/memtest
+
+# P2
+P2/words
