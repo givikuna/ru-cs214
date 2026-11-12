@@ -14,8 +14,6 @@
 // because I use NixOS
 // and otherwise it'll just not work (I'm praying it'll work on school system)
 // :(
-// Nix is still superior tho
-// I use Nix btw
 static void find_bin(const char *name, char *out, size_t n)
 {
     char cmd[128];

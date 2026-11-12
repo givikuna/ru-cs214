@@ -9,7 +9,7 @@ To test the interactive mode, there is a `posix_openpt()` to open a pseudo-termi
 So it tests the interactive mode there.
 Seems to work.
 
-The testing suite checks for redirections, pipelines, wildcards, syntax errors and such.
+The testing suite checks for everything the spec outlines. I think.
 
 ## Note about NixOS
 
@@ -42,6 +42,3 @@ CMD ["/bin/bash"]
 ```
 
 I don't know how to spin up the actual school computers and I'm too lazy to figure it out right now.
-Just wanna go to bed already I have a midterm.
-We're just gonna run with this.
-Life is too short ya'll.

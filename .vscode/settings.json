@@ -20,11 +20,14 @@
         "outsz",
         "pkgs",
         "redirections",
+        "redirs",
         "tarnu",
         "toplevel",
         "Tsvariani",
         "vzcf",
-        "Wextra"
+        "Wextra",
+        "xrealloc",
+        "xstrdup"
     ],
     "C_Cpp.errorSquiggles": "disabled"
 }
