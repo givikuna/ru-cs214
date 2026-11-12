@@ -25,11 +25,16 @@ static void find_bin(const char *name, char *out, size_t n)
     if (f)
     {
         if (fgets(out, n, f))
+        {
             out[strcspn(out, "\n")] = 0;
+        }
+
         pclose(f);
     }
     if (!out[0])
+    {
         snprintf(out, n, "/bin/%s", name);
+    }
 }
 
 static int mk_script(const char *path, const char *body)
@@ -39,6 +44,7 @@ static int mk_script(const char *path, const char *body)
     {
         return -1;
     }
+
     fputs(body, f);
     fclose(f);
 

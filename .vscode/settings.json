@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "coalescetest",
+        "debianutils",
         "direnv",
         "DLEAK",
         "errortest",
@@ -15,6 +16,7 @@
         "Menny",
         "mymalloc",
         "mysh",
+        "openpt",
         "outsz",
         "pkgs",
         "redirections",

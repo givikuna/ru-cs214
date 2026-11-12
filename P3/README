@@ -1,0 +1,47 @@
+Givi Tsvariani, gt380
+
+## Test Plan & Strategy
+
+There is a `test_inputs.sh` file that has a shell script in it that we'll use to test this.
+There is also a `test_mysh.c` file that is actually there to run the tests.
+
+To test the interactive mode, there is a `posix_openpt()` to open a pseudo-terminal.
+So it tests the interactive mode there.
+Seems to work.
+
+The testing suite checks for redirections, pipelines, wildcards, syntax errors and such.
+
+## Note about NixOS
+
+Some stuff here is adjusted to run on NixOS.
+I'm not sure how well it'll run on the school computers.
+
+I tested this in a Docker container running Debian.
+Seems to work there too.
+
+This is the Dockerfile:
+
+```Dockerfile
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    gcc \
+    make \
+    gdb \
+    valgrind \
+    clang \
+    strace \
+    debianutils \
+    coreutils \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]
+```
+
+I don't know how to spin up the actual school computers and I'm too lazy to figure it out right now.
+Just wanna go to bed already I have a midterm.
+We're just gonna run with this.
+Life is too short ya'll.

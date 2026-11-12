@@ -53,6 +53,7 @@
             # scripts
 
             (mkScript "tarnu" "scripts/tarnu.nu")
+            (mkScript "testenv" "scripts/testenv.sh")
           ];
         };
     };
