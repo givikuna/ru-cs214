@@ -14,11 +14,15 @@
         "memtest",
         "Menny",
         "mymalloc",
+        "mysh",
+        "outsz",
         "pkgs",
+        "redirections",
         "tarnu",
         "toplevel",
         "Tsvariani",
         "vzcf",
         "Wextra"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
